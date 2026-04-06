@@ -1,0 +1,101 @@
+/* CRM pipeline timeline styles for Nova client detail panel. */
+.crm-pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.crm-pipeline__item {
+    position: relative;
+    padding-left: 1.4rem;
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.crm-pipeline__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    transform: translateY(-50%);
+    border-radius: 9999px;
+    background: #e5e7eb;
+    border: 2px solid #e5e7eb;
+}
+
+.crm-pipeline__item::after {
+    content: '';
+    position: absolute;
+    left: -1.9rem;
+    top: 50%;
+    width: 1.6rem;
+    height: 2px;
+    transform: translateY(-50%);
+    background: #e5e7eb;
+}
+
+.crm-pipeline__item:first-child::after {
+    content: none;
+}
+
+.crm-pipeline__item--complete {
+    color: #0f766e;
+}
+
+.crm-pipeline__item--complete::before,
+.crm-pipeline__item--complete::after {
+    background: #14b8a6;
+    border-color: #14b8a6;
+}
+
+.crm-pipeline__item--current {
+    color: #1d4ed8;
+}
+
+.crm-pipeline__item--current::before {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 4px #dbeafe;
+}
+
+.crm-pipeline__item--disabled {
+    color: #9ca3af;
+}
+
+.crm-pipeline__button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.crm-pipeline__button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+    border-radius: 9999px;
+}
+
+.crm-pipeline__button:hover {
+    color: #111827;
+}
+
+.crm-pipeline__item--disabled .crm-pipeline__button:hover {
+    color: #4b5563;
+}
+
+/* Hide Nova license warning link near the header logo. */
+a[href="https://nova.laravel.com/licenses"] {
+    display: none !important;
+}

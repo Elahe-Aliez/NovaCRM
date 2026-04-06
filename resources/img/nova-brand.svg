@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" preserveAspectRatio="xMinYMid meet" fill="none">
+  <!-- Modern N icon -->
+  <rect x="4" y="8" width="34" height="34" rx="8" fill="#EF4444"/>
+  <path d="M12 32V18L20 28V18M20 28L28 18V32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text -->
+  <text x="48" y="33" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600">Nova</text>
+  <text x="110" y="33" fill="#EF4444" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="600">CRM</text>
+</svg>
